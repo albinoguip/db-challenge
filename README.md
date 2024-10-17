@@ -17,7 +17,7 @@ Este projeto contém a criação de tabelas, inserção de dados e consultas SQL
 #### 2. Clonando o Repositório
 Clone o repositório para a sua máquina local usando o seguinte comando no terminal:
 ```bash
-git clone <link-do-repositorio>
+git clone https://github.com/albinoguip/db-challenge
 ```
 
 #### 3. Configuração do Banco de Dados
