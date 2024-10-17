@@ -1,56 +1,41 @@
-# DBA Challenge 20240802
+# **Bike Stores Inc - SQL DBA Challenge**
 
+### **Descrição do Projeto**
+Este projeto contém a criação de tabelas, inserção de dados e consultas SQL para a base de dados fictícia da empresa **Bike Stores Inc**. O objetivo é realizar operações de consulta e extração de métricas relevantes para a equipe de Marketing e Comercial.
 
-## Introdução
+### **Tecnologias Utilizadas**
+- **Banco de Dados**: SQLite
+- **Ferramenta de Gerenciamento**: DBeaver
+- **Linguagem**: SQL
 
-Nesse desafio trabalharemos utilizando a base de dados da empresa Bike Stores Inc com o objetivo de obter métricas relevantes para equipe de Marketing e Comercial.
+### **Instalação e Uso do Projeto**
 
-Com isso, teremos que trabalhar com várioas consultas utilizando conceitos como `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `GROUP BY` e `COUNT`.
+#### 1. Pré-requisitos
+- Certifique-se de ter o **DBeaver** instalado. Você pode baixar a versão mais recente em [DBeaver.io](https://dbeaver.io/download/).
+- Este projeto utiliza **SQLite** como banco de dados local. O DBeaver já tem suporte integrado para trabalhar com SQLite.
 
-### Antes de começar
- 
-- O projeto deve utilizar a Linguagem específica na avaliação. Por exempo: SQL, T-SQL, PL/SQL e PSQL;
-- Considere como deadline da avaliação a partir do início do teste. Caso tenha sido convidado a realizar o teste e não seja possível concluir dentro deste período, avise a pessoa que o convidou para receber instruções sobre o que fazer.
-- Documentar todo o processo de investigação para o desenvolvimento da atividade (README.md no seu repositório); os resultados destas tarefas são tão importantes do que o seu processo de pensamento e decisões à medida que as completa, por isso tente documentar e apresentar os seus hipóteses e decisões na medida do possível.
- 
- 
+#### 2. Clonando o Repositório
+Clone o repositório para a sua máquina local usando o seguinte comando no terminal:
+```bash
+git clone <link-do-repositorio>
+```
 
-## O projeto
+#### 3. Configuração do Banco de Dados
+1. Abra o **DBeaver** e crie uma nova conexão com o **SQLite**.
+2. No momento da configuração da conexão, selecione ou crie um arquivo de banco de dados local, como `bike_stores.db`.
+3. Abra o arquivo **schema.sql** no editor SQL do DBeaver e execute o script para criar as tabelas.
+4. Abra o arquivo **data.sql** para inserir os dados de teste nas tabelas.
+5. As consultas SQL necessárias estão no arquivo **queries.sql**, que pode ser executado para gerar os resultados exigidos pelo desafio.
 
-- Criar as consultas utilizando a linguagem escolhida;
-- Entregar o código gerado do Teste.
+#### 4. Executando as Consultas
+- Após a criação das tabelas e inserção dos dados, execute as consultas SQL presentes no arquivo `queries.sql` para gerar as métricas e resultados pedidos.
 
-### Modelo de Dados:
+### **Estrutura do Projeto**
+- `README.md`: Documentação do projeto.
+- `schema.sql`: Script SQL para a criação das tabelas.
+- `data.sql`: Script SQL com dados fictícios para popular as tabelas.
+- `queries.sql`: Script contendo as consultas SQL que respondem aos requisitos do desafio.
+- `.gitignore`: Arquivo para ignorar arquivos desnecessários (como arquivos temporários do SQLite).
 
-Para entender o modelo, revisar o diagrama a seguir:
-
-![<img src="samples/model.png" height="500" alt="Modelo" title="Modelo"/>](samples/model.png)
-
-
-## Selects
-
-Construir as seguintes consultas:
-
-- Listar todos Clientes que não tenham realizado uma compra;
-- Listar os Produtos que não tenham sido comprados
-- Listar os Produtos sem Estoque;
-- Agrupar a quantidade de vendas que uma determinada Marca por Loja. 
-- Listar os Funcionarios que não estejam relacionados a um Pedido.
-
-
-## Readme do Repositório
-
-- Deve conter o título do projeto
-- Uma descrição sobre o projeto em frase
-- Deve conter uma lista com linguagem, framework e/ou tecnologias usadas
-- Como instalar e usar o projeto (instruções)
-- Não esqueça o [.gitignore](https://www.toptal.com/developers/gitignore)
-- Se está usando github pessoal, referencie que é um challenge by coodesh:  
-
->  This is a challenge by [Coodesh](https://coodesh.com/)
-
-## Finalização e Instruções para a Apresentação
-
-1. Adicione o link do repositório com a sua solução no teste
-2. Verifique se o Readme está bom e faça o commit final em seu repositório;
-3. Envie e aguarde as instruções para seguir. Sucesso e boa sorte. =)
+### **Referências**
+This is a challenge by [Coodesh](https://coodesh.com/).
